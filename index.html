@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus | ElevatedLives Coach</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ELEVATED LIVES</h1>
+      <p>CONSCIOUSNESS COACHING</p>
+    </header>
+
+    <div id="welcomeScreen" class="welcome-screen">
+      <h2>Begin Your Inner Net Journey</h2>
+      <p>I am Marcus, your transformation guide. Together we will explore the intersection of mind, body, and soul to unlock your evolutionary path.</p>
+      
+      <div class="input-group">
+        <label>WHAT IS YOUR NAME?</label>
+        <input type="text" id="userName" placeholder="Your name">
+      </div>
+      
+      <div class="input-group">
+        <label>WHAT AREA OF GROWTH ARE YOU FOCUSED ON?</label>
+        <textarea id="userGoal" placeholder="Career, relationships, consciousness, breath work..."></textarea>
+      </div>
+      
+      <button class="btn" id="startBtn">START YOUR EVOLUTION</button>
+    </div>
+
+    <div id="chatInterface" class="chat-container hidden">
+      <div class="chat-header">
+        <div class="coach-info">
+          <div class="coach-avatar">✧</div>
+          <div class="coach-details">
+            <h3>Marcus</h3>
+            <p>Your Evolution Guide</p>
+          </div>
+        </div>
+        <div class="user-badge" id="userDisplay"></div>
+      </div>
+
+      <div class="messages" id="messages"></div>
+
+      <div class="input-container">
+        <input 
+          type="text" 
+          id="messageInput" 
+          placeholder="Share your reflection..."
+        >
+        <button class="btn send-btn" id="sendBtn">SEND</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
